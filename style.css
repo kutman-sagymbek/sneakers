@@ -264,6 +264,9 @@ section {
 @media only screen and (max-width : 480px) {
     .header {
         height: 100px;
+        width: 480px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .header__logoSide-logo {
