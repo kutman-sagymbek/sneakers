@@ -286,7 +286,7 @@ section {
     }
 
     section {
-        max-width: 480px;
+        max-width: 450px;
     }
 
     .container {
@@ -310,14 +310,8 @@ section {
 
     .main__sneakersBox {
         position: relative;
-        width: 200px;
-        height: 260px;
-        border-radius: 40px;
-        border: 1px solid rgba(243, 243, 243, 1);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 180px;
+        height: 250px;
     }
 }
 
