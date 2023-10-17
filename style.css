@@ -8,8 +8,8 @@ body {
 }
 
 .header {
-    max-width: 1080px;
     margin: 0 auto;
+    max-width: 1080px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -289,6 +289,7 @@ section {
     }
 
     section {
+        margin: 0 auto;
         max-width: 450px;
     }
 
@@ -307,16 +308,18 @@ section {
     }
 
     .main__sneakersBlock-search {
-        width: 200px;
+        width: 180px;
         height: 25px;
     }
 
     .main__sneakersBox {
         position: relative;
-        width: 180px;
-        height: 250px;
+        width: 160px;
+        height: 240px;
     }
 }
+
+
 
 
 
