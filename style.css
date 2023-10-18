@@ -1,11 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Добавлен box-sizing для лучшего управления размерами элементов */
+    box-sizing: border-box;
 }
 
 body {
     background: rgba(255, 255, 255, 1) no-repeat;
+    overflow-x: hidden;
 }
 
 .header {
@@ -258,9 +259,11 @@ section {
 }
 
 @media only screen and (max-width: 480px) {
+
     .header {
+        margin: 0 auto;
         height: 100px;
-        width: 480px;
+        max-width: 450px;
         display: flex;
         justify-content: space-between;
     }
@@ -285,7 +288,8 @@ section {
     }
 
     section {
-        max-width: 480px;
+        margin: 0 auto;
+        max-width: 450px;
     }
 
     .container {
