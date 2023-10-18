@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Добавлен box-sizing для лучшего управления размерами элементов */
 }
 
 body {
@@ -25,7 +26,7 @@ body {
 }
 
 .header__logoSide-text {
-
+    /* Стили для текста логотипа */
 }
 
 .slogan {
@@ -193,12 +194,8 @@ section {
     color: rgba(0, 0, 0, 1);
 }
 
-
+/* Медиа-запросы для адаптивности */
 @media (max-width: 1200px) {
-    
-}
-
-@media (max-width: 992px) {
     .header {
         max-width: 960px;
     }
@@ -231,7 +228,7 @@ section {
     }
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width: 768px) {
     .header {
         max-width: 768px;
     }
@@ -261,17 +258,17 @@ section {
     }
 }
 
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width: 480px) {
     .header {
         height: 100px;
-        width: 480px;
+        width: 420px;
         display: flex;
         justify-content: space-between;
     }
 
     .header__logoSide-logo {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 
     .slogan {
@@ -284,23 +281,23 @@ section {
     }
 
     .header__nav-burgerMenu {
-        width: 50px;
-        height: 30px;
+        width: 40px;
+        height: 25px;
     }
 
     section {
         margin: 0 auto;
-        max-width: 450px;
+        max-width: 420px;
     }
 
     .container {
         margin: 0 auto;
-        max-width: 430px;
+        max-width: 400px;
     }
 
     .main__slider-img {
-        width: 430px;
-        height: 200px;
+        width: 350px;
+        height: 180px;
     }
 
     .main__sneakersBlock-title {
@@ -308,20 +305,30 @@ section {
     }
 
     .main__sneakersBlock-search {
-        width: 180px;
+        width: 120px;
         height: 25px;
     }
 
     .main__sneakersBox {
         position: relative;
         width: 160px;
-        height: 240px;
+        height: 220px;
+    }
+
+    .main__sneakersBox-desc {
+        font-size: 12px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 1);
+    }
+
+    .main__sneakersBox-tsena {
+        font-size: 8px;
+        font-weight: 500;
+    }
+
+    .main__sneakersBox-number {
+        font-size: 12px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 1);
     }
 }
-
-
-
-
-
-
-
