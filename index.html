@@ -7,6 +7,32 @@
     <link rel="stylesheet" media="screen" href="style.css">
 </head>
 <body>
+    <div class="cart">
+        <div class="cart__topSide">
+            <h1 class="cart__topSide-title">Корзина</h1>
+            <img class="cart__topSide-cross" src="img/cross.png">
+        </div>
+        <div class="cart__sneakersBoxes">
+            <div class="cart__sneakersBox">
+                <img class="cart__sneakersBox-imgSneakers" src="img/sneakers.svg">
+                <div class="cart__sneakersBox-func">
+                    <p class="cart__sneakersBox-desc">Мужские Кроссовки <br> Nike Blazer Mid Suede</p>
+                    <p class="cart__sneakersBox-number">5500 som</p>
+                </div>
+                <img class="cart__sneakersBox-cross" src="img/cross.png"/>
+            </div>
+
+            <div class="cart__sneakersBox">
+                <img class="cart__sneakersBox-imgSneakers" src="img/sneakers.svg">
+                <div class="cart__sneakersBox-func">
+                    <p class="cart__sneakersBox-desc">Мужские Кроссовки <br> Nike Blazer Mid Suede</p>
+                    <p class="cart__sneakersBox-number">5500 som</p>
+                </div>
+                <img class="cart__sneakersBox-cross" src="img/cross.png"/>
+            </div>
+        </div>
+    </div>
+
     <header class="header">
         <div class="header__logoSide">
             <img src="./img/logo.png" class="header__logoSide-logo"/>
@@ -19,7 +45,7 @@
             <img class="header__nav-burgerMenu" src="img/icons8-menu-100.svg">
             <ul class="header__nav-list">
                 <li class="navElements">
-                    <img class="icon" src="img/cart.png"/>
+                    <img class="cartIcon" src="img/cart.png"/>
                     <div class=price">1205 som</div>
                 </li>
                 <li class="navElements">
@@ -34,7 +60,7 @@
         </nav>
     </header>
 
-    <section>
+    <section class="sneakers">
         <container class="container">
             <main class="main">
                 <div class="main__slider">
@@ -48,59 +74,7 @@
                     </div>
                     <div class="main__sneakersBlock-allSneakers">
                         <div class="main__sneakersBoxes">
-                            <div class="main__sneakersBox">
-                                <img class="main__sneakersBox-like" src="img/likee.png">
-                                <img class="main__sneakersBox-imgSneakers" src="img/sneakers.svg">
-                                <p class="main__sneakersBox-desc">Мужские Кроссовки <br> Nike Blazer Mid Suede</p>
-                                <div class="main__sneakersBox-func">
-                                    <div class="main__sneakersBox-price">
-                                        <p class="main__sneakersBox-tsena">Цена:</p>
-                                        <p class="main__sneakersBox-number">5500 som</p>
-                                    </div>
-                                    <img class="main__sneakersBox-add" src="img/added.svg">
-                                </div>
-                            </div>
 
-                            <div class="main__sneakersBox">
-                                <img class="main__sneakersBox-like" src="img/likee.png">
-                                <img class="main__sneakersBox-imgSneakers" src="img/sneakers.svg">
-                                <p class="main__sneakersBox-desc">Мужские Кроссовки <br> Nike Blazer Mid Suede</p>
-                                <div class="main__sneakersBox-func">
-                                    <div class="main__sneakersBox-price">
-                                        <p class="main__sneakersBox-tsena">Цена:</p>
-                                        <p class="main__sneakersBox-number">5500 som</p>
-                                    </div>
-                                    <img class="main__sneakersBox-add" src="img/added.svg">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="main__sneakersBoxes">
-                            <div class="main__sneakersBox">
-                                <img class="main__sneakersBox-like" src="img/likee.png">
-                                <img class="main__sneakersBox-imgSneakers" src="img/sneakers.svg">
-                                <p class="main__sneakersBox-desc">Мужские Кроссовки <br> Nike Blazer Mid Suede</p>
-                                <div class="main__sneakersBox-func">
-                                    <div class="main__sneakersBox-price">
-                                        <p class="main__sneakersBox-tsena">Цена:</p>
-                                        <p class="main__sneakersBox-number">5500 som</p>
-                                    </div>
-                                    <img class="main__sneakersBox-add" src="img/added.svg">
-                                </div>
-                            </div>
-
-                            <div class="main__sneakersBox">
-                                <img class="main__sneakersBox-like" src="img/likee.png">
-                                <img class="main__sneakersBox-imgSneakers" src="img/sneakers.svg">
-                                <p class="main__sneakersBox-desc">Мужские Кроссовки <br> Nike Blazer Mid Suede</p>
-                                <div class="main__sneakersBox-func">
-                                    <div class="main__sneakersBox-price">
-                                        <p class="main__sneakersBox-tsena">Цена:</p>
-                                        <p class="main__sneakersBox-number">5500 som</p>
-                                    </div>
-                                    <img class="main__sneakersBox-add" src="img/added.svg">
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -110,6 +84,6 @@
 
 
 
-<script src="main.js"></script>
+<script src="main/main.js"></script>
 </body>
 </html>

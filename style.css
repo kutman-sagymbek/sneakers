@@ -65,7 +65,7 @@ body {
     gap: 10px;
 }
 
-.icon {
+.cartIcon {
     height: 18px;
     width: 18px;
 }
@@ -84,13 +84,20 @@ body {
     color: rgba(92, 92, 92, 1);
 }
 
-section {
+.sneakers {
     margin: 0 auto;
     max-width: 1080px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: 0.5s;
 }
+
+/*.sneakers_active {*/
+/*    transform: translateX(30%);*/
+/*}*/
+
+
 
 .container {
     margin: 20px auto;
@@ -144,10 +151,10 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
 }
 
 .main__sneakersBox {
+    margin-top: 20px;
     position: relative;
     width: 210px;
     height: 260px;
@@ -166,8 +173,8 @@ section {
 }
 
 .main__sneakersBox-imgSneakers {
-    width: 133px;
-    height: 112px;
+    width: 120px;
+    height: 140px;
 }
 
 .main__sneakersBox-func {
@@ -193,6 +200,90 @@ section {
     font-size: 14px;
     font-weight: 700;
     color: rgba(0, 0, 0, 1);
+}
+
+.main__sneakersBox-add {
+    width: 18px;
+    height: 18px;
+    background-color: green;
+    border-radius: 4px;
+}
+
+.cart {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 385px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 99;
+    transition: 0.5s;
+    transform: translateX(-100%);
+}
+
+.cart__active {
+    transform: translateX(0%);
+}
+
+.cart__topSide {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 100px;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+.cart__topSide-cross {
+    width:30px;
+    height: 30px;
+}
+
+.cart__topSide-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cart__sneakersBoxes {
+}
+
+.cart__sneakersBox {
+    position: relative;
+    width: 325px;
+    height: 130px;
+    border-radius: 40px;
+    border: 1px solid rgba(243, 243, 243, 1);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart__sneakersBox-imgSneakers {
+    width: 70px;
+    height: 70px;
+}
+
+.cart__sneakersBox-desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+}
+
+.cart__sneakersBox-number {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 20px;
+}
+
+.cart__sneakersBox-cross {
+    width: 30px;
+    height: 30px;
 }
 
 @media (max-width: 1200px) {
